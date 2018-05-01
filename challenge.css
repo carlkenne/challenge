@@ -1,0 +1,78 @@
+/* what probably should be considered as global styles */
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+label {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+h1 {
+  margin: 0px;
+  font-size: 20px;
+}
+
+button {
+  padding: 6px;
+  background-color: white;
+  border: 1px solid #999;
+}
+
+button:hover {
+  background-color: #eee;
+}
+
+button:active {
+  background-color: #aaa;
+}
+
+/* what probably should be considered as component specific styles */
+.date {
+  display: flex;
+  box-shadow: #ddd 0px 0px 4px;
+  background-color: #fbfbfb;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.date > * + * {
+  margin-top: 20px;
+}
+
+.date_invalid-msg {
+  color: red;
+}
+
+.date:not(.invalid) .date_invalid-msg {
+  display: none;
+}
+
+.date_column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.date_row {
+  display: flex;
+}
+
+.date_row > * + * {
+  margin-left: 10px;
+}
+
+.date_column > * + * {
+  margin-top: 10px;
+}

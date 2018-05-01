@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="challenge.css">
+  <script src="challenge.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
+</head>
+
+<body>
+  <form class="date">
+    <h1>Please enter your date of birth to proceed</h1>
+    <div class="date_row">
+      <div class="date_column">
+        <label for="date_year">year</label>
+        <select name="date_year" id="date_year"></select>
+      </div>
+      <div class="date_column">
+        <label for="date_month">month</label>
+        <select name="date_month" id="date_month"></select>
+      </div>
+      <div class="date_column">
+        <label for="date_day">day</label>
+        <select name="date_day" id="date_day"></select>
+      </div>
+    </div>
+
+    <div class="date_invalid-msg">
+      Must be 18 years or older to proceed
+    </div>
+
+    <div class="date_of_birth_button-bar">
+      <button type="button" class="date_next-btn">next</button>
+    </div>
+  </form>
+</body>
+
+</html>
